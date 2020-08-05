@@ -8,7 +8,7 @@
                                     <h2>ABOUT ME</h2>
                                     <p>
                                         Banh mi semiotics tumeric meh, unicorn ugh umami mumblecore echo park cronut. Lomo man bun chambray meh wake up raclette vegan rooftop party brunch ennui. Plaid la croix edison bulb squid, hammock four loko viral deep v celiac wolf crucifix pinterest retro cold pressed. Truffaut gochujang semiotics meh, subway tile bushwick pok pok pok deep.</p>
-                                        <a href="#">Lees Meer</a>   
+                                        <a href="/about">Less Meer</a>   
                                     </div>
 
                         </div>

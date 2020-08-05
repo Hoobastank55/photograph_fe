@@ -5,6 +5,7 @@
     <app-portfolio></app-portfolio>
     <app-collaborate></app-collaborate>
     <app-profile></app-profile>
+    <app-contact></app-contact>
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import appIcon from "../components/home/Icon"
 import appPortfolio from  "../components/home/Portfolio"
 import appCollaborate from "../components/home/Collaborate"
 import appProfile from "../components/home/Profile"
+import appContact from "../components/home/Contact"
 export default {
   components: {
     appHeader,
@@ -21,6 +23,7 @@ export default {
     appPortfolio,
     appCollaborate,
     appProfile,
+    appContact,
   }
 }
 </script>
