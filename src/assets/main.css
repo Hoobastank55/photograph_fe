@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    font-family: 'Varela', sans-serif;
+    
+}
+/*-------COMMON-----*/
+.flex-start{
+
+    justify-content: flex-start;
+}
+.flex-end{
+    justify-content: flex-end;
+}
+.column {
+    flex-direction: column;
+}
+.between{
+    justify-content: space-between;
+
+}
+.flex{
+    display: flex;
+}
+.align-hor {
+    justify-content: center;
+}
+.align-ver {
+    align-items: center;
+}
