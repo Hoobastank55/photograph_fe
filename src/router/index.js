@@ -5,6 +5,7 @@ import About from '../views/About.vue'
 import Blog from '../views/Blog.vue'
 import Contact from '../views/Contact.vue'
 import Portfolio from '../views/Portfolio.vue'
+import Projects from '../views/Portfolio/Projects.vue'
 
 Vue.use(VueRouter)
 
@@ -33,6 +34,11 @@ Vue.use(VueRouter)
     path:'/portfolio',
     name:'Portfolio',
     component: Portfolio
+  },
+  {
+    path:'/projects',
+    name:'Projects',
+    component: Projects
   },
 
 

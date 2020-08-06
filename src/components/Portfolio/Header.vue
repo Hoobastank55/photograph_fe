@@ -1,5 +1,5 @@
 <template>
-    <div class="flex align-ver align-hor landing">
+    <div class="flex align-ver align-hor landingg">
             <div class="flex align-ver align-hor column landing-content">
                 <h1>PORTFOLIO</h1>
                 <h3>MIJN CREATIEVE PORTFOLIO</h3>
@@ -15,13 +15,13 @@ export default {
 </script>
 
 <style>
-.landing{
-    background-image: url(~@/assets/images/bina.jpeg);
+.landingg{
+    background-image: url(~@/assets/images/pencere.jpeg);
     background-size: cover;
     width: 100%;
     height: 50vh;
 }
-.landing-content{
+.landingg-content{
     width: 40%;
     border: 2px solid white;
     
