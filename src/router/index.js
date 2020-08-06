@@ -4,6 +4,8 @@ import Home from '../views/Home.vue'
 import About from '../views/About.vue'
 import Blog from '../views/Blog.vue'
 import Contact from '../views/Contact.vue'
+import Portfolio from '../views/Portfolio.vue'
+
 Vue.use(VueRouter)
 
   const routes = [
@@ -26,7 +28,13 @@ Vue.use(VueRouter)
     path:'/contact',
     name:'Contact',
     component: Contact
-  }
+  },
+  {
+    path:'/portfolio',
+    name:'Portfolio',
+    component: Portfolio
+  },
+
 
 ]
 

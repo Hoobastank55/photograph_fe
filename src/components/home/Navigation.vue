@@ -5,7 +5,7 @@
             <li class="flex align-hor align-ver nav-item"><router-link class="nav-item" :to="{name:'Home'}">Home</router-link></li>
             <li class="flex align-hor align-ver nav-item"><router-link class="nav-item" :to="{name:'About'}">About</router-link></li>
             <li class="flex align-hor align-ver nav-item"><router-link class="nav-item" :to="{name:'Blog'}">Blog</router-link></li>
-            <li class="flex align-hor align-ver nav-item">Project
+            <li class="flex align-hor align-ver nav-item"><router-link class="nav-item" :to="{name:'Portfolio'}">Portfolio</router-link>
                 <ul class="flex column sub-nav-wrap">
                     <li class="sub-nav-item">Nature</li>
                     <li class="sub-nav-item">Wedding</li>
