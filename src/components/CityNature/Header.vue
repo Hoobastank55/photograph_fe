@@ -16,7 +16,7 @@ export default {
 
 <style>
 .city-landing{
-    background-image: url(~@/assets/images/city7.jpg);
+    background-image: url(~@/assets/images/city/city7.jpg);
     background-size: cover;
     background-position: center;
     width: 100%;

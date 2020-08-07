@@ -17,7 +17,7 @@ export default {
 </script>
 <style>
     header{
-    background-image: url(~@/assets/images/Header.jpg);
+    background-image: url(~@/assets/images/home/Header.jpg);
     background-size: cover;
     height:100vh;
     

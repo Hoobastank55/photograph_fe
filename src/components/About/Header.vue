@@ -16,7 +16,7 @@ export default {
 
 <style>
 .landing{
-    background-image: url(~@/assets/images/sky.jpg);
+    background-image: url(~@/assets/images/headers/sky.jpg);
     background-size: cover;
     width: 100%;
     height: 50vh;

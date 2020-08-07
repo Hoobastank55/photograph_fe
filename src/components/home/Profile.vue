@@ -2,7 +2,7 @@
     <div>
           <div class=" flex  align-ver align-hor profile">
                             <div class="flex align-ver prof-photo">
-                                <img src="~@/assets/images/ben.jpg">
+                                <img src="~@/assets/images/home/ben.jpg">
                             </div>
                                 <div class="flex   column prof-content">
                                     <h2>ABOUT ME</h2>

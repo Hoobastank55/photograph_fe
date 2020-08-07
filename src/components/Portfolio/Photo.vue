@@ -4,15 +4,15 @@
                         <div class="portfolio">
                            
                             <div class="flex align-ver align-hor portfolio-photo">
-                                <img src="~@/assets/images/foto-1.jpg">
-                                <img src="~@/assets/images/foto-2.jpg">
-                                <img src="~@/assets/images/foto-3.jpg">
+                                <img src="~@/assets/images/home/foto-1.jpg">
+                                <img src="~@/assets/images/home/foto-2.jpg">
+                                <img src="~@/assets/images/home/foto-3.jpg">
 
                             </div>
 
                             <div class="flex align-ver align-hor portfolio-photo">
-                                <img src="~@/assets/images/foto-4.jpg">
-                                <img src="~@/assets/images/foto-5.jpg">
+                                <img src="~@/assets/images/home/foto-4.jpg">
+                                <img src="~@/assets/images/home/foto-5.jpg">
                                 
 
                             </div>

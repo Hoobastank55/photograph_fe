@@ -8,7 +8,7 @@
                                            
                                     </div>
                                     <div class="flex align-ver prof-photo">
-                                <img src="~@/assets/images/ben.jpg">
+                                <img src="~@/assets/images/home/ben.jpg">
                             </div>
 
                         </div>
