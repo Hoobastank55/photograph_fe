@@ -13,7 +13,7 @@
                                            
                                     </div>
                                     <div class="flex align-ver project-photo">
-                                <img src="~@/assets/images/samantha.jpg">
+                                <img src="~@/assets/images/project/samantha.jpg">
                             </div>
                             
                               
@@ -21,7 +21,7 @@
                         <div class=" flex  align-ver align-hor project-second">
 
                                     <div class="flex align-ver project-second-photo">
-                                <img src="~@/assets/images/zincir.jpg">
+                                <img src="~@/assets/images/project/zincir.jpg">
                             </div>
                             
                                 <div class="flex   column project-second-content">

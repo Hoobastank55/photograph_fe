@@ -7,6 +7,8 @@ import Contact from '../views/Contact.vue'
 import Portfolio from '../views/Portfolio.vue'
 import Projects from '../views/Portfolio/Projects.vue'
 import Citynature from "../views/Portfolio/Citynature.vue"
+import Concert from "../views/Portfolio/Concert.vue"
+import Portrait from "../views/Portfolio/Portrait.vue"
 
 Vue.use(VueRouter)
 
@@ -46,7 +48,16 @@ Vue.use(VueRouter)
     name:'Citynature',
     component: Citynature
   },
-
+  {
+    path:'/concert',
+    name:'Concert',
+    component: Concert
+  },
+  {
+    path:'/portrait',
+    name:'Portrait',
+    component: Portrait
+  },
 ]
 
 const router = new VueRouter({

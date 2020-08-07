@@ -9,7 +9,8 @@
                 <ul class="flex column sub-nav-wrap">
                     <li class="sub-nav-item"><router-link class="nav-item" :to="{name:'Projects'}">Projects</router-link></li>
                     <li class="sub-nav-item"><router-link class="nav-item" :to="{name:'Citynature'}">City&Nature</router-link></li>
-                    <li class="sub-nav-item">Personal</li>
+                    <li class="sub-nav-item"><router-link class="nav-item" :to="{name:'Concert'}">Concert</router-link></li>
+                     <li class="sub-nav-item"><router-link class="nav-item" :to="{name:'Portrait'}">Portrait</router-link></li>
                 </ul>
             </li>
             <li class="flex align-hor align-ver nav-item"><router-link class="nav-item" :to="{name:'Contact'}">Contact</router-link></li>

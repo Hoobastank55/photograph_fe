@@ -11,7 +11,7 @@
                                            
                                     </div>
                                     <div class="flex align-ver blog-photo">
-                                <img src="~@/assets/images/samantha.jpg">
+                                <img src="~@/assets/images/project/samantha.jpg">
                             </div>
                               
                         </div>
