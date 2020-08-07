@@ -6,6 +6,7 @@ import Blog from '../views/Blog.vue'
 import Contact from '../views/Contact.vue'
 import Portfolio from '../views/Portfolio.vue'
 import Projects from '../views/Portfolio/Projects.vue'
+import Citynature from "../views/Portfolio/Citynature.vue"
 
 Vue.use(VueRouter)
 
@@ -40,7 +41,11 @@ Vue.use(VueRouter)
     name:'Projects',
     component: Projects
   },
-
+  {
+    path:'/citynature',
+    name:'Citynature',
+    component: Citynature
+  },
 
 ]
 

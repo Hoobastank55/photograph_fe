@@ -8,7 +8,7 @@
             <li class="flex align-hor align-ver nav-item"><router-link class="nav-item" :to="{name:'Portfolio'}">Portfolio</router-link>
                 <ul class="flex column sub-nav-wrap">
                     <li class="sub-nav-item"><router-link class="nav-item" :to="{name:'Projects'}">Projects</router-link></li>
-                    <li class="sub-nav-item">Wedding</li>
+                    <li class="sub-nav-item"><router-link class="nav-item" :to="{name:'Citynature'}">City&Nature</router-link></li>
                     <li class="sub-nav-item">Personal</li>
                 </ul>
             </li>
