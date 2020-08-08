@@ -5,13 +5,13 @@
                             
                             <div class="flex align-ver align-hor  port-content">
                                 <div class=" flex align-ver align-hor port">
-                                    <a href="#">Portret</a>   
+                                    <p><router-link to="/portrait">Portrait</router-link></p>  
                                 </div>
                                 <div class=" flex align-ver align-hor port">
-                                    <a href="#">Boudoir</a>   
+                                    <p><router-link to="/portfolio">Boudoir</router-link></p>   
                                 </div>
                                 <div class=" flex align-ver align-hor  port">
-                                   <a href="#">Nature & City</a>   
+                                   <p><router-link to="/citynature">City&Nature</router-link></p>  
                                 </div>
                                
                                 
@@ -23,10 +23,10 @@
                                     <a href="#">Artistic Nude</a>   
                                 </div>
                                 <div class=" flex align-ver align-hor  port">
-                                   <a href="#">Potrait</a>   
+                                   <a href="#">Concert</a>
                                 </div>
                                 <div class=" flex align-ver align-hor  port">
-                                    <a href="#">Concert</a>   
+                                   <a href="#">Projects</a>   
                                 </div>
                                
                                 
@@ -69,6 +69,7 @@ export default {
     padding: 10px;
     width: 190px;
     text-align: center;
+    
 }
 .port-content a:hover{
     color: red;
