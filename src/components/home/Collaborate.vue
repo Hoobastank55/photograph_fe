@@ -2,7 +2,7 @@
     
          <div class="flex align-ver align-hor collaborate">
                                 <h1>YES FUN, COLLABORATE!</h1>
-                                <a href="#">Get in Touch</a>
+                               <p><router-link to="/contact">Get in Touch</router-link> </p>
                                 
                         </div>
     
