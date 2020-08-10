@@ -2,7 +2,7 @@
     
          <div class="flex align-ver align-hor collaborate">
                                 <h1>YES FUN, COLLABORATE!</h1>
-                               <p><router-link to="/contact">Get in Touch</router-link> </p>
+                               <router-link to="/contact">Get in Touch</router-link>
                                 
                         </div>
     
@@ -28,9 +28,17 @@ export default {
 .collaborate a{
     background-color: black;
     color: white;
-    font-size: 150%;
+    font-size: 130%;
     text-decoration: none;
     border: 2px solid black;
+    padding: 10px 20px;
+}
+.collaborate a:hover{
+    background-color: black;
+    color:red;
+    font-size: 130%;
+    text-decoration: none;
+    border: 2px solid red;
     padding: 10px 20px;
 }
     

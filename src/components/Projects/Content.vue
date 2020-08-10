@@ -64,7 +64,7 @@ h6{
     margin-left: 40px;
 }
 .project-content p{
-    
+    margin-top: 30px;
     margin-bottom: 35px;
     line-height: 25px;
     font-size: 100%;
@@ -78,11 +78,11 @@ h6{
 .project-content a{
     background-color: black;
     color: white;
-    font-size: 150%;
+    font-size: 110%;
     text-decoration: none;
     border: 2px solid white;
     padding: 10px;
-    width: 200px;
+    width: 160px;
     text-align: center;
 }
 .project-content a:hover{
@@ -102,7 +102,7 @@ h6{
     margin-right: 40px;
 }
 .project-second-content p{
-    
+    margin-top: 30px;
     margin-bottom: 35px;
     line-height: 25px;
     font-size: 100%;
@@ -116,11 +116,11 @@ h6{
 .project-second-content a{
     background-color: black;
     color: white;
-    font-size: 150%;
+    font-size: 110%;
     text-decoration: none;
     border: 2px solid white;
     padding: 10px;
-    width: 200px;
+    width: 160px;
     text-align: center;
 }
 .project-second-content a:hover{

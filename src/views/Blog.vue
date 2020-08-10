@@ -41,10 +41,10 @@ h6{
     margin-left: 40px;
 }
 .blog-content p{
-    
+    margin-top: 30px;
     margin-bottom: 35px;
     line-height: 25px;
-    font-size: 120%;
+    font-size: 100%;
 }
 
 .blog-content{

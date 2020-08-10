@@ -2,18 +2,18 @@
     <nav class="flex between">
         <img class="logo" src="@/assets/images/home/cropped-mArtijnPhotography_trans_white.png">
         <ul class="flex align-ver align-hor nav-main">
-            <li class="flex align-hor align-ver nav-item"><router-link class="nav-item" :to="{name:'Home'}">Home</router-link></li>
-            <li class="flex align-hor align-ver nav-item"><router-link class="nav-item" :to="{name:'About'}">About</router-link></li>
-            <li class="flex align-hor align-ver nav-item"><router-link class="nav-item" :to="{name:'Blog'}">Blog</router-link></li>
-            <li class="flex align-hor align-ver nav-item"><router-link class="nav-item" :to="{name:'Portfolio'}">Portfolio</router-link>
+            <router-link class="nav-item" :to="{name:'Home'}"><li class="flex align-hor align-ver nav-item">Home</li></router-link>
+            <router-link class="nav-item" :to="{name:'About'}"><li class="flex align-hor align-ver nav-item">About</li></router-link>
+            <router-link class="nav-item" :to="{name:'Blog'}"><li class="flex align-hor align-ver nav-item">Blog</li></router-link>
+            <router-link class="nav-item" :to="{name:'Portfolio'}"><li class="flex align-hor align-ver nav-item">Portfolio
                 <ul class="flex column sub-nav-wrap">
-                    <li class="sub-nav-item"><router-link class="nav-item" :to="{name:'Projects'}">Projects</router-link></li>
-                    <li class="sub-nav-item"><router-link class="nav-item" :to="{name:'Citynature'}">City&Nature</router-link></li>
-                    <li class="sub-nav-item"><router-link class="nav-item" :to="{name:'Concert'}">Concert</router-link></li>
-                     <li class="sub-nav-item"><router-link class="nav-item" :to="{name:'Portrait'}">Portrait</router-link></li>
+                    <router-link class="nav-item" :to="{name:'Projects'}"><li class="sub-nav-item">Projects</li></router-link>
+                    <router-link class="nav-item" :to="{name:'Citynature'}"><li class="sub-nav-item">City&Nature</li></router-link>
+                    <router-link class="nav-item" :to="{name:'Concert'}"><li class="sub-nav-item">Concert</li></router-link>
+                     <router-link class="nav-item" :to="{name:'Portrait'}"><li class="sub-nav-item">Portrait</li></router-link>
                 </ul>
-            </li>
-            <li class="flex align-hor align-ver nav-item"><router-link class="nav-item" :to="{name:'Contact'}">Contact</router-link></li>
+            </li></router-link>
+            <router-link class="nav-item" :to="{name:'Contact'}"><li class="flex align-hor align-ver nav-item">Contact</li></router-link>
         </ul>
     </nav>
 </template>

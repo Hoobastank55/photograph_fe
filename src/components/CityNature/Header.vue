@@ -16,7 +16,7 @@ export default {
 
 <style>
 .city-landing{
-    background-image: url(~@/assets/images/city/city7.jpg);
+    background-image:linear-gradient(0deg, rgba(3, 3, 3, 0.527), rgba(3, 3, 3, 0.527)), url(~@/assets/images/city/city7.jpg);
     background-size: cover;
     background-position: center;
     width: 100%;

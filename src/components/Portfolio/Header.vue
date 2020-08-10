@@ -16,7 +16,7 @@ export default {
 
 <style>
 .landingg{
-    background-image: url(~@/assets/images/headers/pencere.jpeg);
+    background-image:linear-gradient(0deg, rgba(3, 3, 3, 0.356), rgba(3, 3, 3, 0.356)), url(~@/assets/images/headers/pencere.jpeg);
     background-size: cover;
     width: 100%;
     height: 50vh;

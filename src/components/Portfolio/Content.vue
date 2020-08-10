@@ -4,29 +4,16 @@
                     <div class="flex align-ver align-hor column port-section">
                             
                             <div class="flex align-ver align-hor  port-content">
-                                <div class=" flex align-ver align-hor port">
-                                    <p><router-link to="/portrait">Portrait</router-link></p>  
-                                </div>
-                                <div class=" flex align-ver align-hor port">
-                                    <p><router-link to="/portfolio">Boudoir</router-link></p>   
-                                </div>
-                                <div class=" flex align-ver align-hor  port">
-                                   <p><router-link to="/citynature">City&Nature</router-link></p>  
-                                </div>
-                               
                                 
-
-
-                             </div>
+                                    <router-link to="/portrait">Portrait</router-link>  
+                                    <router-link to="/portfolio" class="middle">Boudoir</router-link> 
+                                    <router-link to="/citynature">City&Nature</router-link> 
+                                </div>
                              <div class="flex align-ver align-hor  port-content">
-                                <div class=" flex align-ver align-hor  port">
-                                    <a href="#">Artistic Nude</a>   
-                                </div>
-                                <div class=" flex align-ver align-hor  port">
-                                   <a href="#">Concert</a>
-                                </div>
-                                <div class=" flex align-ver align-hor  port">
-                                   <a href="#">Projects</a>   
+                                    <router-link to="/portrait"> Artistic Nude</router-link>  
+                                    <router-link to="/concert" class="middle">Concert</router-link> 
+                                    <router-link to="/projects">Projects</router-link> 
+                               
                                 </div>
                                
                                 
@@ -52,6 +39,9 @@ export default {
     width: 100%;
     background-color:white;
 }
+.middle{
+    margin: 50px;
+}
 
  
 
@@ -75,8 +65,6 @@ export default {
     color: red;
     border:2px solid red;
 }
-.port{
-    margin: 0 70px;
-}
+
 
 </style>

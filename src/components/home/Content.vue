@@ -10,7 +10,7 @@
 .header-content a{
     background-color: black;
     color: white;
-    font-size: 200%;
+    font-size: 140%;
     text-decoration: none;
     border: 2px solid white;
     padding: 10px 20px;
@@ -18,7 +18,7 @@
 .header-content a:hover{
     background-color: black;
     color:red;
-    font-size: 200%;
+    font-size: 140%;
     text-decoration: none;
     border: 2px solid red;
     padding: 10px 20px;
