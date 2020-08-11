@@ -10,7 +10,7 @@
                     <router-link class="nav-item" :to="{name:'Citynature'}"><li class="sub-nav-item">City&Nature</li></router-link>
                     <router-link class="nav-item" :to="{name:'Concert'}"><li class="sub-nav-item">Concert</li></router-link>
                     <router-link class="nav-item" :to="{name:'Projects'}"><li class="sub-nav-item">Projects</li></router-link>
-                    <router-link class="nav-item" :to="{name:'Portrait'}"><li class="sub-nav-item">Portrait</li></router-link>
+                    <router-link id="sub-item" :to="{name:'Portrait'}"><li class="sub-nav-item">Portrait</li></router-link>
                 </ul>
             </li></router-link>
             <router-link class="nav-item" :to="{name:'Contact'}"><li class="flex align-hor align-ver nav-item">Contact</li></router-link>
@@ -70,6 +70,18 @@ nav a.nav-item  {
 #nav-port li:hover{
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
+}
+#sub-item{
+    text-decoration: none;
+    color: white;
+}
+#sub-item li:hover{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+#sub-item li{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 /*---------------------------------------------*/
 
