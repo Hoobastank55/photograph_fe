@@ -1,7 +1,8 @@
 <template>
    
-        
-    <div class=" flex  align-ver align-hor blog">
+        <div class=" flex column baslik">
+            <h2>BLOG</h2>
+        <div class=" flex  align-ver align-hor blog">
         
                             
                             
@@ -16,7 +17,7 @@
                             </div>
                               
                         </div>
-                        
+                        </div>
 </template>
 <script>
 export default {
@@ -25,6 +26,20 @@ export default {
 </script>
 
 <style>
+.baslik h2{
+    color: black;
+    margin-top:100px;
+    margin-left: 85px;
+    font-size: 300%;
+}
+.baslik h2::after{
+    background:lightslategray;
+    display: block;
+    content: '';
+    height: 1px;
+    width: 100%; 
+    margin-top: 15px;   
+}
 .blog-content h6{
     font-size: 200%;
     margin-top: 30px;
@@ -42,7 +57,7 @@ export default {
 }
 .blog{
     width: 100%;
-    height: 100vh;
+    height: 70vh;
     
 }
 .blog-photo img{

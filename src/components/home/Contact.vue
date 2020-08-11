@@ -8,8 +8,8 @@
                                 Heb jij een te gek leuk idee in je hoofd voor een shoot,</br>
                                 of wil je meer informatie over mijn tarieven,</br>
                                 of…. zomaar een vraag over fotografie ?</br>
-                                    mARTijn</br>
-                                    <i class="fa fa-map-marker" aria-hidden="true"></i>VENLO, NEDERLAND</p>
+                                    mARTijn</p></br>
+                                    <p><i class="fa fa-map-marker" aria-hidden="true"></i>VENLO, NEDERLAND</p>
 
                                     <h2>CONTACT GEGEVENS</h2>
                                     <p><i class="fa fa-phone" aria-hidden="true"></i>+31(0) 6 10 10 11 58</br>
@@ -75,6 +75,16 @@ export default {
     line-height: 25px;
     margin: 5px;
     
+}
+.contact-content p:nth-of-type(2){
+line-height: 30px;
+    margin: 5px;
+    font-size: 110%;
+}
+.contact-content p:nth-of-type(3){
+line-height: 40px;
+    margin: 5px;
+    font-size: 130%;
 }
 .contact-form{
     
