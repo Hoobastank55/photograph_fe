@@ -60,7 +60,7 @@ h6{
     
 }
 .project-photo img{
-    height: 500px;
+    height: 400px;
     margin-left: 40px;
 }
 .project-content p{
@@ -98,7 +98,7 @@ h6{
     
 }
 .project-second-photo img{
-    height: 350px;
+    height: 300px;
     margin-right: 40px;
 }
 .project-second-content p{
@@ -109,7 +109,7 @@ h6{
 }
 
 .project-second-content{
-    width: 40%;
+    width: 30%;
     text-align: left;
     align-items: left;
 }

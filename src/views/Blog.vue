@@ -4,6 +4,7 @@
     <div class=" flex  align-ver align-hor blog">
         
                             
+                            
                                 <div class="flex   column blog-content">
                                     <h6>CANDYSHOOT MET SAMANTHA KISS</h6>
                                     <p>
@@ -24,12 +25,20 @@ export default {
 </script>
 
 <style>
-h6{
-    font-size: 300%;
+.blog-content h6{
+    font-size: 200%;
     margin-top: 30px;
     margin-right: 50px;
     
 
+}
+.blog-content h6::after{
+    content: '';
+    background: red;
+    height: 2px;
+    width: 100px;
+    display: block;
+    margin-top: 10px;
 }
 .blog{
     width: 100%;
@@ -48,12 +57,12 @@ h6{
 }
 
 .blog-content{
-    width: 30%;
+    width: 50%;
     text-align: left;
-    align-items: left;
+    
+    
 }
 
-    
     
 
     

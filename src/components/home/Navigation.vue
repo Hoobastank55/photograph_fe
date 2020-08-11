@@ -5,12 +5,12 @@
             <router-link class="nav-item" :to="{name:'Home'}"><li class="flex align-hor align-ver nav-item">Home</li></router-link>
             <router-link class="nav-item" :to="{name:'About'}"><li class="flex align-hor align-ver nav-item">About</li></router-link>
             <router-link class="nav-item" :to="{name:'Blog'}"><li class="flex align-hor align-ver nav-item">Blog</li></router-link>
-            <router-link class="nav-item" :to="{name:'Portfolio'}"><li class="flex align-hor align-ver nav-item">Portfolio
+            <router-link id="nav-port" :to="{name:'Portfolio'}"><li class="flex align-hor align-ver nav-item">Portfolio
                 <ul class="flex column sub-nav-wrap">
-                    <router-link class="nav-item" :to="{name:'Projects'}"><li class="sub-nav-item">Projects</li></router-link>
                     <router-link class="nav-item" :to="{name:'Citynature'}"><li class="sub-nav-item">City&Nature</li></router-link>
                     <router-link class="nav-item" :to="{name:'Concert'}"><li class="sub-nav-item">Concert</li></router-link>
-                     <router-link class="nav-item" :to="{name:'Portrait'}"><li class="sub-nav-item">Portrait</li></router-link>
+                    <router-link class="nav-item" :to="{name:'Projects'}"><li class="sub-nav-item">Projects</li></router-link>
+                    <router-link class="nav-item" :to="{name:'Portrait'}"><li class="sub-nav-item">Portrait</li></router-link>
                 </ul>
             </li></router-link>
             <router-link class="nav-item" :to="{name:'Contact'}"><li class="flex align-hor align-ver nav-item">Contact</li></router-link>
@@ -62,14 +62,22 @@ nav a.nav-item  {
     text-decoration: none;
 
 }
+#nav-port{
+    text-decoration: none;
+    color: white;
 
+}
+#nav-port li:hover{
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
 /*---------------------------------------------*/
 
 
 ul.sub-nav-wrap {
     list-style: none;
     display: none;
-    top: 46px;
+    top: 45px;
     left: 0;
     height: 30px;
     position: absolute;

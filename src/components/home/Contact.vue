@@ -59,6 +59,13 @@ export default {
     padding:  30px 0;
     font-size: 150%;
 }
+.contact-content h1::after{
+    content: '';
+    background: red;
+    height: 2px;
+    width: 60px;
+    display: block;
+}
 .contact-content i{
     color:red;
     font-size: 150%;
@@ -99,6 +106,7 @@ export default {
 .field{
     padding: 10px;
 }
+
 
 </style>
 

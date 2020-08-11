@@ -53,12 +53,22 @@ export default {
     font-size: 250%;
     margin: 10px;
 }
+.contact-content h1::after{
+    content: '';
+    background-color: red;
+    height: 2px;
+    width: 60px;
+    display: block;
+    margin-top: 10px;
+
+}
 .contact-content h2{
     color: black;
     padding-left: 0;
     padding:  30px 0;
     font-size: 150%;
 }
+
 .contact-content i{
     color:red;
     font-size: 150%;
