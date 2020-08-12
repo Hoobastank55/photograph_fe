@@ -14,6 +14,7 @@
                 </ul>
             </li></router-link>
             <router-link class="nav-item" :to="{name:'Contact'}"><li class="flex align-hor align-ver nav-item">Contact</li></router-link>
+            
         </ul>
     </nav>
 </template>

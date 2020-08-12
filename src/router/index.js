@@ -9,6 +9,7 @@ import Projects from '../views/Portfolio/Projects.vue'
 import Citynature from "../views/Portfolio/Citynature.vue"
 import Concert from "../views/Portfolio/Concert.vue"
 import Portrait from "../views/Portfolio/Portrait.vue"
+import Samantha from "../components/Blog/Samantha/Content.vue"
 
 Vue.use(VueRouter)
 
@@ -57,6 +58,11 @@ Vue.use(VueRouter)
     path:'/portrait',
     name:'Portrait',
     component: Portrait
+  },
+  {
+    path:'/blog/samantha',
+    name:'Samantha',
+    component: Samantha
   },
 ]
 
