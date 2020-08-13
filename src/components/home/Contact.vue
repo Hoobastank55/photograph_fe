@@ -41,7 +41,7 @@ export default {
     
 }
 </script>
-<style lang="css" scoped>
+<style>
 .contact{
     height: 100vh;
 }

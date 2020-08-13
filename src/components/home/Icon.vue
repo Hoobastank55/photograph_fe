@@ -1,7 +1,7 @@
 <template>
 
     <section class="icons-wrap align-ver flex column">
-        <h1 class="flex align-ver align-hor">WHAT AM I DOING</h1>
+        <h2 class="flex align-ver align-hor">WHAT AM I DOING</h2>
         <div class="flex wrap inner-icons-wrap">
             <router-link class="flex align-ver column align-hor icon-content" :to="{name:item.link}" v-for="(item, index) in icons" :key="index">
                 <fa-icon class="icon-svg" :icon="['fas', item.icon]" />
@@ -32,7 +32,7 @@ export default {
                 link:''
             },
             {
-                icon: 'camera',
+                icon: 'hippo',
                 name: 'PROJECTS',
                 link:'Projects'
             },
@@ -70,7 +70,7 @@ width: 100%;
 background-color: white;
 }
 
-section.icons-wrap h2.icon-wrap-hdr {
+section.icons-wrap h2 {
 font-size: 150%;
 color: black;
 height: 80px;
@@ -83,17 +83,24 @@ color: black;
 }
 
 section.icons-wrap div.inner-icons-wrap {
-    width: 600px;
+    width: 900px;
     margin: 0 auto;
 }
 section.icons-wrap div.inner-icons-wrap a.icon-content {
-    height: 150px;
+    height:180px;
     text-align: center;
     width: 33.333%;
+    text-decoration: none;
 }
-section.icons-wrap div.inner-icons-wrap a.icon-content .icon-svg, 
+section.icons-wrap div.inner-icons-wrap a.icon-content .icon-svg{
+    height: 50% !important;
+    font-size: 300%;
+    color: red;
+}
 section.icons-wrap div.inner-icons-wrap a.icon-content p.icon-context {
     height: 50% !important;
-    font-size: 22px;
+    font-size: 150%;
+    color: black;
+    
 }
 </style>
