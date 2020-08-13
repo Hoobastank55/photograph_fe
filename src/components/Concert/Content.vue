@@ -28,7 +28,7 @@
                                 <img src="~@/assets/images/concert/concert12.jpg">
 
                             </div>
-                            <div class="flex align-ver  align-hor concert-photo-vertical">
+                            <div class="flex align-ver align-hor concert-photo-vertical">
                                 <img src="~@/assets/images/concert/concert13.jpg">
                                 <img src="~@/assets/images/concert/concert14.jpg">
                                 
