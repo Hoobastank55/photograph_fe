@@ -1,60 +1,58 @@
 <template>
-    
-         
-                        <div class="city">
-                            
-                            <div class="flex align-ver align-hor city-photo">
-                                <img src="~@/assets/images/city/city1.jpg">
-                                <img src="~@/assets/images/city/city2.jpg">
-                                <img src="~@/assets/images/city/city3.jpg">
+    <div>         
+        <div class="flex align-hor wrap city" >
+            <div v-for="(src, index) in images"
+                :key="index"
+                class="img"
+                @click="() => showImg(index)"
+                :style="{backgroundImage: 'url('+ src + ')'}"
+            >
 
-                            </div>
-
-                            <div class="flex align-ver align-hor city-photo-inner">
-                                <img src="~@/assets/images/city/city4.jpg">
-                                <img src="~@/assets/images/city/city5.jpg">
-                                <img src="~@/assets/images/city/city6.jpg">
-
-                            </div>
-                            <div class="flex align-ver align-hor city-photo">
-                                <img src="~@/assets/images/city/city7.jpg">
-                                <img src="~@/assets/images/city/city8.jpg">
-                                <img src="~@/assets/images/city/city9.jpg">
-
-                            </div>
-                            <div class="flex align-ver align-hor city-photo-vertical">
-                                <img src="~@/assets/images/city/city10.jpg">
-                                <img src="~@/assets/images/city/city11.jpg">
-                                <img src="~@/assets/images/city/city12.jpg">
-
-                            </div>
-                            <div class="flex align-ver align-hor city-photo">
-                                <img src="~@/assets/images/city/city13.jpg">
-                                <img src="~@/assets/images/city/city14.jpg">
-                                <img src="~@/assets/images/city/city15.jpg">
-
-                            </div>
-                            <div class="flex align-ver align-hor city-photo-inner">
-                                <img src="~@/assets/images/city/city16.jpg">
-                                <img src="~@/assets/images/city/city17.jpg">
-                                <img src="~@/assets/images/city/city18.jpg">
-
-                            </div>
-                            <div class="flex align-ver align-hor city-photo">
-                                <img src="~@/assets/images/city/city19.jpg">
-                                <img src="~@/assets/images/city/city20.jpg">
-                                <img src="~@/assets/images/city/city21.jpg">
-
-                            </div>
-
-                        </div>
-                
-        
+            </div>
+            <vue-easy-lightbox
+                :visible="visible"
+                :imgs="images"
+                :index="index"
+                @hide="handleHide"
+            ></vue-easy-lightbox>
+        </div>
+    </div>
     
 
 </template>
 <script>
+import VueEasyLightbox from 'vue-easy-lightbox'
+
 export default {
+    components: {
+        VueEasyLightbox
+    },
+    data(){
+        return{
+           visible: false, 
+           index: 0,
+        }
+    },
+    methods:{
+        showImg (index) {
+            this.index = index
+            this.visible = true
+        },
+        handleHide () {
+            this.visible = false
+        }
+    },
+    computed: {
+         images(){
+             const count = 14
+             let image_arr = []
+             for (let index = 1; index < count; index++) {
+                 image_arr.push(require("@/assets/images/city/city"+index+".jpg"))                 
+             }
+
+             return image_arr
+         }
+    }
     
 }
 </script>
@@ -62,14 +60,22 @@ export default {
 <style>
 .city{
     background-color: black;
+    width: 100%;
     
 }
 
 
-.city-photo img{
-    height: 300px;
+.city .img{
+    height: 400px;
+    width: 600px;
+    background-size: cover;
+    background-position: center;
     border: 4px solid white;
-    margin: 20px 5px;
+    margin: 10px;
+    
+}
+.city .img:hover{
+    cursor: pointer;
 }
 .city-photo-inner img{
     height: 300px;

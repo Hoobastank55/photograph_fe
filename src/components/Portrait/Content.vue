@@ -1,87 +1,58 @@
 <template>
-    
-         
-                        <div class="portrait">
-                            
-                            <div class="flex align-ver align-hor portrait-photo">
-                                <img src="~@/assets/images/portrait/portrait1.jpg">
-                                <img src="~@/assets/images/portrait/portrait2.jpg">
-                                <img src="~@/assets/images/portrait/portrait3.jpg">
+    <div>         
+        <div class="flex align-hor wrap portrait" >
+            <div v-for="(src, index) in images"
+                :key="index"
+                class="img"
+                @click="() => showImg(index)"
+                :style="{backgroundImage: 'url('+ src + ')'}"
+            >
 
-                            </div>
-                            <div class="flex align-ver align-hor portrait-photo-inner">
-                                <img src="~@/assets/images/portrait/portrait4.jpg">
-                                <img src="~@/assets/images/portrait/portrait5.jpg">
-                                <img src="~@/assets/images/portrait/portrait6.jpg">
-                            </div>
-                            <div class="flex align-ver align-hor portrait-photo-vertical">
-                                <img src="~@/assets/images/portrait/portrait7.jpg">
-                                <img src="~@/assets/images/portrait/portrait8.jpg">
-                                <img src="~@/assets/images/portrait/portrait9.jpg">
-
-                            </div>
-                            <div class="flex align-ver align-hor portrait-photo-inner">
-                                <img src="~@/assets/images/portrait/portrait10.jpg">
-                                <img src="~@/assets/images/portrait/portrait11.jpg">
-                                <img src="~@/assets/images/portrait/portrait12.jpg">
-
-                            </div>
-                             <div class="flex align-ver align-hor portrait-photo-special">
-                                <img src="~@/assets/images/portrait/portrait13.jpg">
-                                <img src="~@/assets/images/portrait/portrait14.jpg">
-                                <img src="~@/assets/images/portrait/portrait15.jpg">
-
-                            </div>
-                            <div class="flex align-ver align-hor portrait-photo">
-                                <img src="~@/assets/images/portrait/portrait16.jpg">
-                                <img src="~@/assets/images/portrait/portrait17.jpg">
-                                <img src="~@/assets/images/portrait/portrait18.jpg">
-
-                            </div>
-                            <div class="flex align-ver  align-hor portrait-photo-vertical">
-                                <img src="~@/assets/images/portrait/portrait19.jpg">
-                                <img src="~@/assets/images/portrait/portrait20.jpg">
-                                <img src="~@/assets/images/portrait/portrait21.jpg">
-                                
-
-                            </div>
-                            <div class="flex align-ver  align-hor portrait-photo-vertical">
-                                <img src="~@/assets/images/portrait/portrait22.jpg">
-                                <img src="~@/assets/images/portrait/portrait23.jpg">
-                                <img src="~@/assets/images/portrait/portrait24.jpg">
-                                
-
-                            </div>
-                             <div class="flex align-ver align-hor portrait-photo-inner">
-                                <img src="~@/assets/images/portrait/portrait25.jpg">
-                                <img src="~@/assets/images/portrait/portrait26.jpg">
-                                <img src="~@/assets/images/portrait/portrait27.jpg">
-
-                            </div>
-                            <div class="flex align-ver  align-hor portrait-photo-vertical">
-                                <img src="~@/assets/images/portrait/portrait28.jpg">
-                                <img src="~@/assets/images/portrait/portrait29.jpg">
-                                <img src="~@/assets/images/portrait/portrait30.jpg">
-                                
-
-                            </div>
-                            <div class="flex align-ver  align-hor portrait-photo-vertical">
-                                <img src="~@/assets/images/portrait/portrait31.jpg">
-                              
-                                
-
-                            </div>
-                            
-                            
-
-                        </div>
-                
-        
+            </div>
+            <vue-easy-lightbox
+                :visible="visible"
+                :imgs="images"
+                :index="index"
+                @hide="handleHide"
+            ></vue-easy-lightbox>
+        </div>
+    </div>
     
 
 </template>
 <script>
+import VueEasyLightbox from 'vue-easy-lightbox'
+
 export default {
+    components: {
+        VueEasyLightbox
+    },
+    data(){
+        return{
+           visible: false, 
+           index: 0,
+        }
+    },
+    methods:{
+        showImg (index) {
+            this.index = index
+            this.visible = true
+        },
+        handleHide () {
+            this.visible = false
+        }
+    },
+    computed: {
+         images(){
+             const count = 32
+             let image_arr = []
+             for (let index = 1; index < count; index++) {
+                 image_arr.push(require("@/assets/images/portrait/portrait"+index+".jpg"))                 
+             }
+
+             return image_arr
+         }
+    }
     
 }
 </script>
@@ -89,31 +60,23 @@ export default {
 <style>
 .portrait{
     background-color: black;
+    width: 100%;
     
 }
 
 
-.portrait-photo img{
-    height: 300px;
-    border: 4px solid black;
-    margin: 20px 5px;
+.portrait .img{
+    height: 600px;
+    width: 400px;
+    background-size: cover;
+    background-position: center;
+    border: 4px solid white;
+    margin: 10px;
+    
 }
-.portrait-photo-inner img{
-    height: 300px;
-    border: 4px solid black;
-    margin: 0 5px;
+.portrait .img:hover{
+    cursor: pointer;
 }
-.portrait-photo-vertical img{
-    height: 675px;
-    border: 4px solid black;
-    margin:  5px;
-
-} 
-.portrait-photo-special img{
-    height: 450px;
-    border: 4px solid black;
-    margin: 20px 5px;
-} 
 
 
 </style>
