@@ -80,22 +80,7 @@ nav a.nav-item  {
     color: white;
 
 }
-#nav-port li:hover{
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
-}
-#sub-item{
-    text-decoration: none;
-    color: white;
-}
-#sub-item li:hover{
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-}
-#sub-item li{
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-}
+
 /*---------------------------------------------*/
 
 
