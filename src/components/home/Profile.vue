@@ -34,8 +34,8 @@ export default {
 }
 .prof-content p{
     color: white;
-    margin-bottom: 40px;
-    line-height: 15px;
+    margin-bottom: 30px;
+    line-height: 20px;
     font-size: 100%;
 }
 .prof-content a{
@@ -61,9 +61,11 @@ export default {
     width: 30%;
     text-align: left;
     align-items: left;
+    height: 75%;
 }
 .prof-content h2{
     padding-left: 0;
+    padding-bottom: 30px;
 }
 .prof-content h2::after{
     content: '';

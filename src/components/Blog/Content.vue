@@ -1,6 +1,11 @@
 <template>
    
         <div class=" flex column baslik">
+                <ul class="flex breadcrumb">
+                    <li><router-link to="/">Home</router-link></li>
+                    <li>Blog</li>
+                </ul>
+
             <h2>BLOG</h2>
         <div class=" flex  align-ver align-hor blog">
         
@@ -26,11 +31,38 @@ export default {
 </script>
 
 <style>
+.breadcrumb{
+    margin-top: 90px;
+    margin-left: 140px;
+    color: black;
+}
+.breadcrumb li{
+    margin: 0px;
+    list-style: none;
+
+}
+
+.breadcrumb li a{
+    text-decoration: none;
+    color:gray;
+    margin-right: 5px;
+}
+.breadcrumb li a:hover{
+    text-decoration: none;
+    color:gray;
+    margin-right: 5px;
+    text-decoration: underline;
+}
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
 .baslik h2{
     color: black;
-    margin-top:100px;
     margin-left: 85px;
     font-size: 300%;
+    padding-top: 10px;
 }
 .baslik h2::after{
     background:lightslategray;
@@ -42,7 +74,7 @@ export default {
 }
 .blog-content a{
     font-size: 200%;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-right: 50px;
     text-decoration: none;
     color: black;

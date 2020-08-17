@@ -17,7 +17,7 @@ export default {
     data() {
         return {
             icons: [{
-                    icon: 'globe',
+                    icon: 'tree',
                     name: 'NATURE & CITY',
                     link:'Citynature'
                 },

@@ -3,6 +3,11 @@
     <div class="flex align-hor samantha-main">
       <div class="left-content">
         <div class="samantha-title">
+          <ul class="flex breadcrumb-samantha">
+                    <li><router-link to="/">Home</router-link></li>
+                    <li><router-link to="/blog">Blog</router-link></li>
+                    <li>CandyShoot with Samantha Kiss</li>
+                </ul>
           <h2>CANDYSHOOT MET SAMANTHA KISS</h2>
           <h2>INTRODUCTION</h2>
           <p>Readymade godard brooklyn, kogi shoreditch hashtag hella shaman kitsch man bun pinterest flexitarian. Offal
@@ -78,92 +83,118 @@
 </template>
 
 <script>
-export default {
-  
-};
+  export default {
+
+  };
 </script>
 
 
 <style>
-.left-content {
-  width: 60%;
-  margin-top: 90px;
-  margin-right: 30px;
+  .left-content {
+    width: 60%;
+    margin-top: 90px;
+    margin-right: 30px;
+  }
+  .breadcrumb-samantha{
+    margin-top: 30px;
+    color: black;
+}
+.breadcrumb-samantha li{
+    margin: 0px;
+    list-style: none;
+
 }
 
-.samantha-title h2 {
+.breadcrumb-samantha  li a{
+    text-decoration: none;
+    color:gray;
+    margin-right: 5px;
+}
+.breadcrumb-samantha  li a:hover{
+    text-decoration: none;
+    color:gray;
+    margin-right: 5px;
+    text-decoration: underline;
+}
+ul.breadcrumb-samantha li+li:before {
+  padding: 8px;
   color: black;
-  font-size: 200%;
-  padding-left: 0px;
+  content: "/\00a0";
 }
 
-.samantha-title h3 {
-  color: black;
-  width: 100%;
-  font-size: 200%;
-  padding-left: 0;
-}
+  .samantha-title h2 {
+    color: black;
+    font-size: 200%;
+    padding-left: 0px;
+  }
 
-.samantha-title h3::before {
-  content: "";
-  background: lightslategray;
-  height: 1px;
-  width: 100%;
-  display: block;
-  margin: 20px 0;
-}
+  .samantha-title h3 {
+    color: black;
+    width: 100%;
+    font-size: 200%;
+    padding-left: 0;
+  }
 
-.right-content {
-  width: 20%;
-  border-left: 1px solid lightslategray;
-  margin-top: 90px;
-}
+  .samantha-title h3::before {
+    content: "";
+    background: lightslategray;
+    height: 1px;
+    width: 100%;
+    display: block;
+    margin: 20px 0;
+  }
 
-.right-content input[type="text"] {
-  margin: 20px 0 20px 20px;
-}
+  .right-content {
+    width: 20%;
+    border-left: 1px solid lightslategray;
+    margin-top: 90px;
+  }
 
-.right-content h4 {
-  font-size: 130%;
-  margin: 20px;
-}
+  .right-content input[type="text"] {
+    margin: 20px 0 20px 20px;
+  }
 
-.right-content a {
-  text-decoration: none;
-  margin: 20px 0 20px 20px;
-  color: red;
-  font-size: 90%;
-}
+  .right-content h4 {
+    font-size: 130%;
+    margin: 20px;
+  }
 
-.right-content a:hover {
-  text-decoration: underline;
-}
+  .right-content a {
+    text-decoration: none;
+    margin: 20px 0 20px 20px;
+    color: red;
+    font-size: 90%;
+  }
 
-.blog-form p {
-  margin: 20px 0;
-}
+  .right-content a:hover {
+    text-decoration: underline;
+  }
 
-.information {
-  margin-right: 30px;
-}
+  .blog-form p {
+    margin: 20px 0;
+  }
 
-.information p {
-  margin: 10px 0;
-}
+  .information {
+    margin-right: 30px;
+  }
 
-.check {
-  margin: 50px 0;
-}
+  .information p {
+    margin: 10px 0;
+  }
 
-.check p {
-  padding-left: 5px;
-}
+  .check {
+    margin: 50px 0;
+  }
 
-.button {
-  float: right;
-  height: 50px;
-  font-size: 90%;
-  margin: 20px 30px 60px;
-  width: 170px;
-}
+  .check p {
+    padding-left: 5px;
+  }
+
+  .button {
+    float: right;
+    height: 50px;
+    font-size: 90%;
+    margin: 20px 30px 60px;
+    width: 170px;
+  }
 </style>
