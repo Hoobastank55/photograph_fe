@@ -62,40 +62,24 @@ ul.nav-main li.nav-item {
 ul.nav-main li.nav-item:hover{
     background-color: red;
     border-radius: 0;
-    
-    
     transition: background-color 0.5s;
     border-radius: 5px;
 
     
 }
 
+
 nav a.nav-item  {
     color: #fff;
     text-decoration: none;
 
 }
-#nav-port{
-    text-decoration: none;
-    color: white;
-
-}
-#nav-port li:hover{
-    border-bottom-right-radius: 0;
+nav a.nav-item:hover:nth-child(4){
     border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    background-color:red;
 }
-#sub-item{
-    text-decoration: none;
-    color: white;
-}
-#sub-item li:hover{
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-}
-#sub-item li{
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-}
+
 /*---------------------------------------------*/
 
 

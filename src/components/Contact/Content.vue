@@ -3,16 +3,16 @@
         <div class="flex align-ver align-hor contact">
                             <div class=" flex column contact-content">
                                 <h3>STUUR MIJ EEN BERICHT</h3>
-                                <p>Hartstikke leuk als je vragen of ideeën voor mij hebt.</br>
-                                Wil je weten wat er mogelijk is,</br>
-                                Heb jij een te gek leuk idee in je hoofd voor een shoot,</br>
-                                of wil je meer informatie over mijn tarieven,</br>
-                                of…. zomaar een vraag over fotografie ?</br>
-                                    mARTijn</p></br>
+                                <p>Hartstikke leuk als je vragen of ideeën voor mij hebt.<br>
+                                Wil je weten wat er mogelijk is,<br>
+                                Heb jij een te gek leuk idee in je hoofd voor een shoot,<br>
+                                of wil je meer informatie over mijn tarieven,<br>
+                                of…. zomaar een vraag over fotografie ?<br>
+                                    mARTijn</p><br>
                                     <p><i class="fa fa-map-marker" aria-hidden="true"></i>VENLO, NEDERLAND</p>
 
                                     <h3>CONTACT GEGEVENS</h3>
-                                    <p><i class="fa fa-phone" aria-hidden="true"></i>+31(0) 6 10 10 11 58</br>
+                                    <p><i class="fa fa-phone" aria-hidden="true"></i>+31(0) 6 10 10 11 58<br>
                                     <i class="fa fa-envelope" aria-hidden="true"></i>INFO@MARTIJNPHOTOGRAPHY.NL</p>
 
                             </div>
@@ -47,6 +47,7 @@ export default {
 }
 .contact-content{
     margin-right: 20px;
+    width: 35%;
 }
 .contact-content h3{
     color:black;
@@ -94,7 +95,7 @@ line-height: 40px;
     background-color: black;
     color: white;
     text-align: left;
-    padding: 50px;
+    padding: 30px;
     width: 40%;
 }
 .contact-form button{
